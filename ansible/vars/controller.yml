@@ -6,34 +6,22 @@
 ### LABELS ###
 
 controller_labels:
-  - name: <user_label>
-    organization: <user_org>
+  - name: test
+    organization: CaC
 
 
 ### JOB TEMPLATES ###
 
 controller_templates:
 
-  - name: <new_template_name>
-    description: <new_template_desc>
+  - name: Hello World
+    description: Test templete
     job_type: run
-    inventory: <user_inventory>
-    project: <user_project>
-    playbook: playbooks/<playbook_file>
-    credential: <user_cred>
-    organization: <user_org>
+    inventory: Summit25
+    project: summit25-test1
+    playbook: playbooks/hello_world.yml
+    credential: Demo Credential
+    organization: CaC
     labels:
-      - <user_label>
+      - test
     survey_enabled: true
-    survey_spec:
-      name: <survey_name>
-      description: <survey_desc>
-      spec:
-        - question_name: <question_name>
-          question_description: <question_desc>
-          required: true
-          type: text
-          max: 50
-          variable: <var_to_store_answer>
-          default: <default_answer>
-          new_question: true
